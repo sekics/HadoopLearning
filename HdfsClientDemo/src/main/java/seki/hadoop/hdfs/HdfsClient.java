@@ -122,4 +122,17 @@ public class HdfsClient {
             System.out.println(Arrays.toString(blockLocations));
         }
     }
+
+    @Test
+    public void testFile() throws IOException{
+        FileStatus[] fileStatuses = fs.listStatus(new Path("/"));
+        for (FileStatus fileStatus : fileStatuses) {
+            if (fileStatus.isFile()) {
+                System.out.println("This is a file : "+fileStatus.getPath().getName());
+            }
+            else{
+                System.out.println("This is a directory : " + fileStatus.getPath().getName());
+            }
+        }
+    }
 }

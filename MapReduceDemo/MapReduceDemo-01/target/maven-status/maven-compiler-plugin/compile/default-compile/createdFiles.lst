@@ -1,0 +1,6 @@
+seki\hadoop\mapreduce\wordcount\WordCountMapper.class
+seki\hadoop\mapreduce\wordcount2\WordCountDriver.class
+seki\hadoop\mapreduce\wordcount2\WordCountMapper.class
+seki\hadoop\mapreduce\wordcount2\WordCountReducer.class
+seki\hadoop\mapreduce\wordcount\WordCountDriver.class
+seki\hadoop\mapreduce\wordcount\WordCountReducer.class
