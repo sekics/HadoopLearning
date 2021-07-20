@@ -35,8 +35,9 @@ public class WordCountDriver {
         job.setOutputValueClass(IntWritable.class);
 
         //6、设置输入路径和输出路径
-        FileInputFormat.setInputPaths(job,new Path("D:\\Code\\JavaCode\\IDEAPROJECT\\Hadoop\\input\\words.txt"));
-        FileOutputFormat.setOutputPath(job,new Path("D:\\Code\\JavaCode\\IDEAPROJECT\\Hadoop\\output\\wordcount666"));
+        FileInputFormat.setInputPaths(job,new Path("D:\\Code\\JavaCode\\IDEAPROJECT\\Hadoop\\input\\words.txt")) ;
+//        FileInputFormat.setInputPaths(job,new Path("D:\\ZJU_Course\\Hadoop\\资料\\11_input\\inputcombinetextinputformat"));
+        FileOutputFormat.setOutputPath(job,new Path("D:\\ZJU_Course\\Hadoop\\output\\wordcountCombine1"));
 
         //7、提交job
         boolean result = job.waitForCompletion(true) ;
